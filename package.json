@@ -4,8 +4,14 @@
   "description": "Complete Itro to Computer Science course by Brian Holt on Frontend Masters.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*.test.js"
   },
   "author": "Carlos A. Estrada",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.4"
+  }
 }
