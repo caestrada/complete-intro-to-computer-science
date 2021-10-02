@@ -3,9 +3,14 @@ const expect = chai.expect;
 
 function insertionSort(nums) {
   for (let i = 1; i < nums.length; i++) {
-    let numberToInsert = nums[i];
-    let j;
-    console.log("::::: j", j);
+    for (let j = i - 1; j >= 0; j--) {
+      const temp = nums[j + 1];
+      const sortedVal = nums[j];
+      if (sortedVal > temp) {
+        nums[j + 1] = sortedVal;
+        nums[j] = temp;
+      }
+    }
   }
 }
 
